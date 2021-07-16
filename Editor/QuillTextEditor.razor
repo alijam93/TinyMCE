@@ -19,21 +19,7 @@
     [Parameter] public string Theme { get; set; } = ThemeType.Snow;
 
     [Parameter] public string DebugLevel { get; set; } = DebugType.Info;
-
-    public static class ThemeType
-    {
-        public const string Snow = "snow";
-        public const string Bubble = "bubble";
-    }
-
-    public static class DebugType
-    {
-        public const string Info = "info";
-        public const string Error = "error";
-        public const string Warn = "warn";
-        public const string Log = "log";
-    }
-
+  
     private ElementReference QuillElement;
     private ElementReference ToolBar;
 
